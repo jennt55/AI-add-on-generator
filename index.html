@@ -3,29 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Generator</title>
   </head>
   <body>
-    <header><h1>Welcome to the generator</h1></header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>The poem will go here</div>
-    </main>
+    <div class="container">
+      <header><h1>AI Poem Generator</h1></header>
+      <main>
+        <form>
+          <input
+            class="instructions"
+            type="text"
+            placeholder="Enter the topic of your poem"
+            autofocus
+            required
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="poem">The poem will go here</div>
+      </main>
 
-    <footer>
-      <a href="https://github.com/jennt55/AI-add-on-generator" target="_blank"
-        >Open source code</a
-      >
-      by Jenn Taft
-    </footer>
+      <footer>
+        <a href="https://github.com/jennt55/AI-add-on-generator" target="_blank"
+          >Open source code
+        </a>
+        &nbsp; by Jenn Taft
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
